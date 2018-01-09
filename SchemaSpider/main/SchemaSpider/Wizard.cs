@@ -75,12 +75,6 @@ namespace SchemaSpider
                     continue;
                 }
 
-                //It's difficult to tell the precision to know what is bools or not.  SUCKS.
-                //Leave it up to the user.  It's almost wizardry
-                /*if (field.Name.Equals("isdeleted", StringComparison.OrdinalIgnoreCase))
-                {
-                    sw.WriteLine("\t\tpublic {0} {1} {{ get; set; }} //{2}", "bool", field.Name, field.DbFieldName);
-                }*/
                 var fieldType = field.Type;
                 if (field.IsShortBool)
                 {
@@ -319,18 +313,6 @@ namespace SchemaSpider
                     }                    
                 }
                 field.Type = GetDataType(row["DataType"].ToString(), field.AllowsNull);
-                if (field.Type.StartsWith("short"))
-                {
-                    //todo resolve this...  SOMEHOW
-                    /*
-                    if (MessageBox.Show(string.Format("[{0}] is this field intended to be used as a bool?", field.Name),
-                        "Possible Bool Value",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Question) == DialogResult.Yes)
-                    {
-                        field.IsShortBool = true;
-                    }*/
-                }
                 if (field.Type.Equals("Byte[]") && field.Length==32)
                 {
                     field.Type = "Guid";

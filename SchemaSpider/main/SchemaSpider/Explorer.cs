@@ -86,13 +86,11 @@ namespace SchemaSpider
                         result.Fields.Add(item);
                     }           
          
-                    //need to fix the shorts...
                     result.SampleData.Load(reader);
                     foreach(DataRow row in result.SampleData.Rows)
                     {                                            
                         foreach (var field in result.Fields.Where(o => o.Type.StartsWith("short")))
                         {
-                            //todo sucks but no easy way to do this...  Might need to pass some control information
                             field.IsShortBool = true;
                             var val = row[field.DbFieldName] as short? ?? default(short);
                             if (val > 1 || val < -1)
