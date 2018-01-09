@@ -92,7 +92,6 @@ namespace Northwind.Mappings
                 map.Key(key => key.Column("CATEGORY_ID"));
                 map.Cascade(Cascade.All);
             }, mapping => mapping.OneToMany());
-
 		}
 	}
 }
