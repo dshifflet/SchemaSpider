@@ -39,7 +39,7 @@ If you are considering generating some mappings and models.  Review the Northwin
 * Shorts which are bools or actually shorts.  It will try to guess based on the data it encounters.  Sometimes it might get it wrong.
 * There are row counts, you might want to change things around to optimize it.  FetchStrategy etc...
 
-##SAMPLE OUTPUT:
+## SAMPLE OUTPUT:
 
 **MODEL**
 ```
