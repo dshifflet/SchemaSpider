@@ -21,12 +21,12 @@ USAGE:
 ```
 <table file> <serialized output> <nh path> <namespace> <plural indicator> <ignore list>
 ```
-**table file**: A file that lists the tables to work with.  Look at the file in tests\Northwind\schema_generation\tables.txt.  It will handle multiple schemas.
-**serialized output**: It can serialize the output from exploring the database to an xml to save time.  Like if you need to change something, so you don't have to explore a remote DB again.
-**nh path**: The path to where the NH mapping and model files will be placed.
-**namespace**: The namespace to use
-**plural indicator**: If your tables are like northwind "ITEMS" use "".  If they are "ITEM" use "s", this is used for the children properties to denote it's plural.
-**ignore list**: Table prefixes to ignore, basically a file with wildcard.  For example if you named everything "TBL_ITEM" use "TBL_" in the ignore list file so your classes are called "Item" and not "TblItem"
+* table file: A file that lists the tables to work with.  Look at the file in tests\Northwind\schema_generation\tables.txt.  It will handle multiple schemas.
+* serialized output: It can serialize the output from exploring the database to an xml to save time.  Like if you need to change something, so you don't have to explore a remote DB again.
+* nh path: The path to where the NH mapping and model files will be placed.
+* namespace: The namespace to use
+* plural indicator: If your tables are like northwind "ITEMS" use "".  If they are "ITEM" use "s", this is used for the children properties to denote it's plural.
+* ignore list: Table prefixes to ignore, basically a file with wildcard.  For example if you named everything "TBL_ITEM" use "TBL_" in the ignore list file so your classes are called "Item" and not "TblItem"
 
 ## HOW IT EXPLORES:
 Basically it will walk across the tables that are defined in the "Table File" via a database, the connection is defined in the "data-connectionStrings.config" file.  It will also look for relationships between tables.  It doesn't use the PK and XK relationships, it's based off the field names.  So if you have INVOICE.INVOICE_ID and you had INVOICE_DETAILS.INVOICE_ID it would infer a relationship of 1:* between INVOICE and INVOICE_DETAILS on INVOICE_ID.  It will do both sides of the relationships both parent and child.
