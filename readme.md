@@ -87,11 +87,11 @@ namespace Northwind.Mappings
 			Property(prop => prop.Picture, map => map.Column("PICTURE"));
 
 			//CHILDREN
-            Bag(prop => prop.Products, map =>
-            {
-                map.Key(key => key.Column("CATEGORY_ID"));
-                map.Cascade(Cascade.All);
-            }, mapping => mapping.OneToMany());
+			Bag(prop => prop.Products, map =>
+			{
+				map.Key(key => key.Column("CATEGORY_ID"));
+				map.Cascade(Cascade.All);
+			}, mapping => mapping.OneToMany());
 		}
 	}
 }
