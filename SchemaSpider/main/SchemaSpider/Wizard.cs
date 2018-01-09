@@ -347,7 +347,6 @@ namespace SchemaSpider
             return input;
         }
 
-        //todo this can probably be replaced with ToCsharpy
         private string GetFieldName(string input)
         {
             var result = "";
