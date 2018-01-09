@@ -1,0 +1,2462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExplorerResults xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tables>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>CATEGORIES</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>CATEGORIES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Categories</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>CATEGORY_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CATEGORIES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Categories</ClassName>
+          <Name>CategoryName</Name>
+          <DbFieldName>CATEGORY_NAME</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CATEGORIES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Categories</ClassName>
+          <Name>Description</Name>
+          <DbFieldName>DESCRIPTION</DbFieldName>
+          <Length>2000</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CATEGORIES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Categories</ClassName>
+          <Name>Picture</Name>
+          <DbFieldName>PICTURE</DbFieldName>
+          <Length>255</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>CATEGORIES</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Categories</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>CATEGORY_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>PRODUCTS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Products</ClassName>
+            <Name>CategoryId</Name>
+            <DbFieldName>CATEGORY_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CATEGORIES" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="CATEGORIES">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CATEGORY_ID" type="xs:int" />
+                      <xs:element name="CATEGORY_NAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DESCRIPTION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PICTURE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <CATEGORIES diffgr:id="CATEGORIES1" msdata:rowOrder="0">
+              <CATEGORY_ID>1</CATEGORY_ID>
+              <CATEGORY_NAME>Beverages</CATEGORY_NAME>
+              <DESCRIPTION>Soft drinks, coffees, teas, beers, and ales</DESCRIPTION>
+              <PICTURE>beverages.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES2" msdata:rowOrder="1">
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <CATEGORY_NAME>Condiments</CATEGORY_NAME>
+              <DESCRIPTION>Sweet and savory sauces, relishes, spreads, and seasonings</DESCRIPTION>
+              <PICTURE>condiments.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES3" msdata:rowOrder="2">
+              <CATEGORY_ID>3</CATEGORY_ID>
+              <CATEGORY_NAME>Confections</CATEGORY_NAME>
+              <DESCRIPTION>Desserts, candies, and sweet breads</DESCRIPTION>
+              <PICTURE>confections.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES4" msdata:rowOrder="3">
+              <CATEGORY_ID>4</CATEGORY_ID>
+              <CATEGORY_NAME>Dairy Products</CATEGORY_NAME>
+              <DESCRIPTION>Cheeses</DESCRIPTION>
+              <PICTURE>diary.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES5" msdata:rowOrder="4">
+              <CATEGORY_ID>5</CATEGORY_ID>
+              <CATEGORY_NAME>Grains/Cereals</CATEGORY_NAME>
+              <DESCRIPTION>Breads, crackers, pasta, and cereal</DESCRIPTION>
+              <PICTURE>cereals.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES6" msdata:rowOrder="5">
+              <CATEGORY_ID>6</CATEGORY_ID>
+              <CATEGORY_NAME>Meat/Poultry</CATEGORY_NAME>
+              <DESCRIPTION>Prepared meats</DESCRIPTION>
+              <PICTURE>meat.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES7" msdata:rowOrder="6">
+              <CATEGORY_ID>7</CATEGORY_ID>
+              <CATEGORY_NAME>Produce</CATEGORY_NAME>
+              <DESCRIPTION>Dried fruit and bean curd</DESCRIPTION>
+              <PICTURE>produce.gif</PICTURE>
+            </CATEGORIES>
+            <CATEGORIES diffgr:id="CATEGORIES8" msdata:rowOrder="7">
+              <CATEGORY_ID>8</CATEGORY_ID>
+              <CATEGORY_NAME>Seafood</CATEGORY_NAME>
+              <DESCRIPTION>Seaweed and fish</DESCRIPTION>
+              <PICTURE>seafood.gif</PICTURE>
+            </CATEGORIES>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>CUSTOMERS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>CUSTOMER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>CustomerCode</Name>
+          <DbFieldName>CUSTOMER_CODE</DbFieldName>
+          <Length>5</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>CompanyName</Name>
+          <DbFieldName>COMPANY_NAME</DbFieldName>
+          <Length>40</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>ContactName</Name>
+          <DbFieldName>CONTACT_NAME</DbFieldName>
+          <Length>30</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>ContactTitle</Name>
+          <DbFieldName>CONTACT_TITLE</DbFieldName>
+          <Length>30</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Address</Name>
+          <DbFieldName>ADDRESS</DbFieldName>
+          <Length>60</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>City</Name>
+          <DbFieldName>CITY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Region</Name>
+          <DbFieldName>REGION</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>PostalCode</Name>
+          <DbFieldName>POSTAL_CODE</DbFieldName>
+          <Length>10</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Country</Name>
+          <DbFieldName>COUNTRY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Phone</Name>
+          <DbFieldName>PHONE</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>CUSTOMERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Customers</ClassName>
+          <Name>Fax</Name>
+          <DbFieldName>FAX</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>CUSTOMERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Customers</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>CUSTOMER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>ORDERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Orders</ClassName>
+            <Name>CustomerId</Name>
+            <DbFieldName>CUSTOMER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CUSTOMERS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="CUSTOMERS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="CUSTOMER_ID" type="xs:int" />
+                      <xs:element name="CUSTOMER_CODE">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="5" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="COMPANY_NAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="40" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CONTACT_NAME" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CONTACT_TITLE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ADDRESS" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="60" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CITY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REGION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="POSTAL_CODE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="COUNTRY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHONE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="FAX" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <CUSTOMERS diffgr:id="CUSTOMERS1" msdata:rowOrder="0">
+              <CUSTOMER_ID>1</CUSTOMER_ID>
+              <CUSTOMER_CODE>ALFKI</CUSTOMER_CODE>
+              <COMPANY_NAME>Alfreds Futterkiste</COMPANY_NAME>
+              <CONTACT_NAME>Maria Anders</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Representative</CONTACT_TITLE>
+              <ADDRESS>Obere Str. 57</ADDRESS>
+              <CITY>Berlin</CITY>
+              <POSTAL_CODE>12209</POSTAL_CODE>
+              <COUNTRY>Germany</COUNTRY>
+              <PHONE>030-0074321</PHONE>
+              <FAX>030-0076545</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS2" msdata:rowOrder="1">
+              <CUSTOMER_ID>2</CUSTOMER_ID>
+              <CUSTOMER_CODE>ANATR</CUSTOMER_CODE>
+              <COMPANY_NAME>Ana Trujillo Emparedados y helados</COMPANY_NAME>
+              <CONTACT_NAME>Ana Trujillo</CONTACT_NAME>
+              <CONTACT_TITLE>Owner</CONTACT_TITLE>
+              <ADDRESS>Avda. de la Constituci?n 2222</ADDRESS>
+              <CITY>M?xico D.F.</CITY>
+              <POSTAL_CODE>05021</POSTAL_CODE>
+              <COUNTRY>Mexico</COUNTRY>
+              <PHONE>(5) 555-4729</PHONE>
+              <FAX>(5) 555-3745</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS3" msdata:rowOrder="2">
+              <CUSTOMER_ID>3</CUSTOMER_ID>
+              <CUSTOMER_CODE>ANTON</CUSTOMER_CODE>
+              <COMPANY_NAME>Antonio Moreno Taquer?a</COMPANY_NAME>
+              <CONTACT_NAME>Antonio Moreno</CONTACT_NAME>
+              <CONTACT_TITLE>Owner</CONTACT_TITLE>
+              <ADDRESS>Mataderos  2312</ADDRESS>
+              <CITY>M?xico D.F.</CITY>
+              <POSTAL_CODE>05023</POSTAL_CODE>
+              <COUNTRY>Mexico</COUNTRY>
+              <PHONE>(5) 555-3932</PHONE>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS4" msdata:rowOrder="3">
+              <CUSTOMER_ID>4</CUSTOMER_ID>
+              <CUSTOMER_CODE>AROUT</CUSTOMER_CODE>
+              <COMPANY_NAME>Around the Horn</COMPANY_NAME>
+              <CONTACT_NAME>Thomas Hardy</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Representative</CONTACT_TITLE>
+              <ADDRESS>120 Hanover Sq.</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>WA1 1DP</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <PHONE>(171) 555-7788</PHONE>
+              <FAX>(171) 555-6750</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS5" msdata:rowOrder="4">
+              <CUSTOMER_ID>5</CUSTOMER_ID>
+              <CUSTOMER_CODE>BERGS</CUSTOMER_CODE>
+              <COMPANY_NAME>Berglunds snabbk?p</COMPANY_NAME>
+              <CONTACT_NAME>Christina Berglund</CONTACT_NAME>
+              <CONTACT_TITLE>Order Administrator</CONTACT_TITLE>
+              <ADDRESS>Berguvsv?gen  8</ADDRESS>
+              <CITY>Lule?</CITY>
+              <POSTAL_CODE>S-958 22</POSTAL_CODE>
+              <COUNTRY>Sweden</COUNTRY>
+              <PHONE>0921-12 34 65</PHONE>
+              <FAX>0921-12 34 67</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS6" msdata:rowOrder="5">
+              <CUSTOMER_ID>6</CUSTOMER_ID>
+              <CUSTOMER_CODE>BLAUS</CUSTOMER_CODE>
+              <COMPANY_NAME>Blauer See Delikatessen</COMPANY_NAME>
+              <CONTACT_NAME>Hanna Moos</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Representative</CONTACT_TITLE>
+              <ADDRESS>Forsterstr. 57</ADDRESS>
+              <CITY>Mannheim</CITY>
+              <POSTAL_CODE>68306</POSTAL_CODE>
+              <COUNTRY>Germany</COUNTRY>
+              <PHONE>0621-08460</PHONE>
+              <FAX>0621-08924</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS7" msdata:rowOrder="6">
+              <CUSTOMER_ID>7</CUSTOMER_ID>
+              <CUSTOMER_CODE>BLONP</CUSTOMER_CODE>
+              <COMPANY_NAME>Blondel p?re et fils</COMPANY_NAME>
+              <CONTACT_NAME>Fr?d?rique Citeaux</CONTACT_NAME>
+              <CONTACT_TITLE>Marketing Manager</CONTACT_TITLE>
+              <ADDRESS>24, place Kl?ber</ADDRESS>
+              <CITY>Strasbourg</CITY>
+              <POSTAL_CODE>67000</POSTAL_CODE>
+              <COUNTRY>France</COUNTRY>
+              <PHONE>88.60.15.31</PHONE>
+              <FAX>88.60.15.32</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS8" msdata:rowOrder="7">
+              <CUSTOMER_ID>8</CUSTOMER_ID>
+              <CUSTOMER_CODE>BOLID</CUSTOMER_CODE>
+              <COMPANY_NAME>B?lido Comidas preparadas</COMPANY_NAME>
+              <CONTACT_NAME>Mart?n Sommer</CONTACT_NAME>
+              <CONTACT_TITLE>Owner</CONTACT_TITLE>
+              <ADDRESS>C/ Araquil, 67</ADDRESS>
+              <CITY>Madrid</CITY>
+              <POSTAL_CODE>28023</POSTAL_CODE>
+              <COUNTRY>Spain</COUNTRY>
+              <PHONE>(91) 555 22 82</PHONE>
+              <FAX>(91) 555 91 99</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS9" msdata:rowOrder="8">
+              <CUSTOMER_ID>9</CUSTOMER_ID>
+              <CUSTOMER_CODE>BONAP</CUSTOMER_CODE>
+              <COMPANY_NAME>Bon app'</COMPANY_NAME>
+              <CONTACT_NAME>Laurence Lebihan</CONTACT_NAME>
+              <CONTACT_TITLE>Owner</CONTACT_TITLE>
+              <ADDRESS>12, rue des Bouchers</ADDRESS>
+              <CITY>Marseille</CITY>
+              <POSTAL_CODE>13008</POSTAL_CODE>
+              <COUNTRY>France</COUNTRY>
+              <PHONE>91.24.45.40</PHONE>
+              <FAX>91.24.45.41</FAX>
+            </CUSTOMERS>
+            <CUSTOMERS diffgr:id="CUSTOMERS10" msdata:rowOrder="9">
+              <CUSTOMER_ID>10</CUSTOMER_ID>
+              <CUSTOMER_CODE>BOTTM</CUSTOMER_CODE>
+              <COMPANY_NAME>Bottom-Dollar Markets</COMPANY_NAME>
+              <CONTACT_NAME>Elizabeth Lincoln</CONTACT_NAME>
+              <CONTACT_TITLE>Accounting Manager</CONTACT_TITLE>
+              <ADDRESS>23 Tsawassen Blvd.</ADDRESS>
+              <CITY>Tsawassen</CITY>
+              <REGION>BC</REGION>
+              <POSTAL_CODE>T2F 8M4</POSTAL_CODE>
+              <COUNTRY>Canada</COUNTRY>
+              <PHONE>(604) 555-4729</PHONE>
+              <FAX>(604) 555-3745</FAX>
+            </CUSTOMERS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>EMPLOYEES</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>EMPLOYEE_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Lastname</Name>
+          <DbFieldName>LASTNAME</DbFieldName>
+          <Length>20</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Firstname</Name>
+          <DbFieldName>FIRSTNAME</DbFieldName>
+          <Length>10</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Title</Name>
+          <DbFieldName>TITLE</DbFieldName>
+          <Length>30</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>TitleOfCourtesy</Name>
+          <DbFieldName>TITLE_OF_COURTESY</DbFieldName>
+          <Length>25</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Birthdate</Name>
+          <DbFieldName>BIRTHDATE</DbFieldName>
+          <Length>7</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>DateTime?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Hiredate</Name>
+          <DbFieldName>HIREDATE</DbFieldName>
+          <Length>7</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>DateTime?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Address</Name>
+          <DbFieldName>ADDRESS</DbFieldName>
+          <Length>60</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>City</Name>
+          <DbFieldName>CITY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Region</Name>
+          <DbFieldName>REGION</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>PostalCode</Name>
+          <DbFieldName>POSTAL_CODE</DbFieldName>
+          <Length>10</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Country</Name>
+          <DbFieldName>COUNTRY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>HomePhone</Name>
+          <DbFieldName>HOME_PHONE</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Extension</Name>
+          <DbFieldName>EXTENSION</DbFieldName>
+          <Length>4</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Photo</Name>
+          <DbFieldName>PHOTO</DbFieldName>
+          <Length>255</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>Notes</Name>
+          <DbFieldName>NOTES</DbFieldName>
+          <Length>2000</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>EMPLOYEES</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Employees</ClassName>
+          <Name>ReportsTo</Name>
+          <DbFieldName>REPORTS_TO</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>int?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>EMPLOYEES</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Employees</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>EMPLOYEE_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>ORDERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Orders</ClassName>
+            <Name>EmployeeId</Name>
+            <DbFieldName>EMPLOYEE_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="EMPLOYEES" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="EMPLOYEES">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="EMPLOYEE_ID" type="xs:int" />
+                      <xs:element name="LASTNAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="FIRSTNAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="TITLE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="TITLE_OF_COURTESY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="25" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="BIRTHDATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="HIREDATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="ADDRESS" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="60" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CITY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REGION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="POSTAL_CODE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="COUNTRY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="HOME_PHONE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="EXTENSION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="4" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHOTO" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="NOTES" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REPORTS_TO" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <EMPLOYEES diffgr:id="EMPLOYEES1" msdata:rowOrder="0">
+              <EMPLOYEE_ID>1</EMPLOYEE_ID>
+              <LASTNAME>Davolio</LASTNAME>
+              <FIRSTNAME>Nancy</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Ms.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1968-12-08T00:00:00-08:00</BIRTHDATE>
+              <HIREDATE>1992-05-01T00:00:00-07:00</HIREDATE>
+              <ADDRESS>507 - 20th Ave. E.Apt. 2A</ADDRESS>
+              <CITY>Seattle</CITY>
+              <REGION>WA</REGION>
+              <POSTAL_CODE>98122</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <HOME_PHONE>(206) 555-9857</HOME_PHONE>
+              <EXTENSION>5467</EXTENSION>
+              <PHOTO>nancy.jpg</PHOTO>
+              <NOTES>Education includes a BA in psychology from Colorado State University.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.</NOTES>
+              <REPORTS_TO>2</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES2" msdata:rowOrder="1">
+              <EMPLOYEE_ID>2</EMPLOYEE_ID>
+              <LASTNAME>Fuller</LASTNAME>
+              <FIRSTNAME>Andrew</FIRSTNAME>
+              <TITLE>Vice President, Sales</TITLE>
+              <TITLE_OF_COURTESY>Dr.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1952-02-19T00:00:00-08:00</BIRTHDATE>
+              <HIREDATE>1992-08-14T00:00:00-07:00</HIREDATE>
+              <ADDRESS>908 W. Capital Way</ADDRESS>
+              <CITY>Tacoma</CITY>
+              <REGION>WA</REGION>
+              <POSTAL_CODE>98401</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <HOME_PHONE>(206) 555-9482</HOME_PHONE>
+              <EXTENSION>3457</EXTENSION>
+              <PHOTO>andrew  .jpg</PHOTO>
+              <NOTES>Andrew received his BTS commercial and a Ph.D. in international marketing from the University of Dallas.  He is fluent in French and Italian and reads German.  He joined the company as a sales representative, was promoted to sales manager and was then named vice president of sales.  Andrew is a member of the Sales Management Roundtable, the Seattle Chamber of Commerce, and the Pacific Rim Importers Association.</NOTES>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES3" msdata:rowOrder="2">
+              <EMPLOYEE_ID>3</EMPLOYEE_ID>
+              <LASTNAME>Leverling</LASTNAME>
+              <FIRSTNAME>Janet</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Ms.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1963-08-30T00:00:00-07:00</BIRTHDATE>
+              <HIREDATE>1992-04-01T00:00:00-08:00</HIREDATE>
+              <ADDRESS>722 Moss Bay Blvd.</ADDRESS>
+              <CITY>Kirkland</CITY>
+              <REGION>WA</REGION>
+              <POSTAL_CODE>98033</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <HOME_PHONE>(206) 555-3412</HOME_PHONE>
+              <EXTENSION>3355</EXTENSION>
+              <PHOTO>janet.jpg</PHOTO>
+              <NOTES>Janet has a BS degree in chemistry from Boston College).  She has also completed a certificate program in food retailing management.  Janet was hired as a sales associate and was promoted to sales representative.</NOTES>
+              <REPORTS_TO>2</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES4" msdata:rowOrder="3">
+              <EMPLOYEE_ID>4</EMPLOYEE_ID>
+              <LASTNAME>Peacock</LASTNAME>
+              <FIRSTNAME>Margaret</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Mrs.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1958-09-19T00:00:00-07:00</BIRTHDATE>
+              <HIREDATE>1993-05-03T00:00:00-07:00</HIREDATE>
+              <ADDRESS>4110 Old Redmond Rd.</ADDRESS>
+              <CITY>Redmond</CITY>
+              <REGION>WA</REGION>
+              <POSTAL_CODE>98052</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <HOME_PHONE>(206) 555-8122</HOME_PHONE>
+              <EXTENSION>5176</EXTENSION>
+              <PHOTO>margaret.jpg</PHOTO>
+              <NOTES>Margaret holds a BA in English literature from Concordia College and an MA from the American Institute of Culinary Arts. She was temporarily assigned to the London office before returning to her permanent post in Seattle.</NOTES>
+              <REPORTS_TO>2</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES5" msdata:rowOrder="4">
+              <EMPLOYEE_ID>5</EMPLOYEE_ID>
+              <LASTNAME>Buchanan</LASTNAME>
+              <FIRSTNAME>Steven</FIRSTNAME>
+              <TITLE>Sales Manager</TITLE>
+              <TITLE_OF_COURTESY>Mr.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1955-03-04T00:00:00-08:00</BIRTHDATE>
+              <HIREDATE>1993-10-17T00:00:00-07:00</HIREDATE>
+              <ADDRESS>14 Garrett Hill</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>SW1 8JR</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <HOME_PHONE>(71) 555-4848</HOME_PHONE>
+              <EXTENSION>3453</EXTENSION>
+              <PHOTO>steven.jpg</PHOTO>
+              <NOTES>Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree.  Upon joining the company as a sales representative, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London, where he was promoted to sales manager.  Mr. Buchanan has completed the courses "Successful Telemarketing" and "International Sales Management."  He is fluent in French.</NOTES>
+              <REPORTS_TO>2</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES6" msdata:rowOrder="5">
+              <EMPLOYEE_ID>6</EMPLOYEE_ID>
+              <LASTNAME>Suyama</LASTNAME>
+              <FIRSTNAME>Michael</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Mr.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1963-07-02T00:00:00-07:00</BIRTHDATE>
+              <HIREDATE>1993-10-17T00:00:00-07:00</HIREDATE>
+              <ADDRESS>Coventry House Miner Rd.</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>EC2 7JR</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <HOME_PHONE>(71) 555-7773</HOME_PHONE>
+              <EXTENSION>428</EXTENSION>
+              <PHOTO>michael.jpg</PHOTO>
+              <NOTES>Michael is a graduate of Sussex University (MA, economics) and the University of California at Los Angeles (MBA, marketing).  He has also taken the courses "Multi-Cultural Selling" and "Time Management for the Sales Professional."  He is fluent in Japanese and can read and write French, Portuguese, and Spanish.</NOTES>
+              <REPORTS_TO>5</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES7" msdata:rowOrder="6">
+              <EMPLOYEE_ID>7</EMPLOYEE_ID>
+              <LASTNAME>King</LASTNAME>
+              <FIRSTNAME>Robert</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Mr.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1960-05-29T00:00:00-07:00</BIRTHDATE>
+              <HIREDATE>1994-01-02T00:00:00-08:00</HIREDATE>
+              <ADDRESS>Edgeham Hollow Winchester Way</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>RG1 9SP</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <HOME_PHONE>(71) 555-5598</HOME_PHONE>
+              <EXTENSION>465</EXTENSION>
+              <PHOTO>robert.jpg</PHOTO>
+              <NOTES>Robert King served in the Peace Corps and traveled extensively before completing his degree in English at the University of Michigan and then joining the company.  After completing a course entitled "Selling in Europe," he was transferred to the London office.</NOTES>
+              <REPORTS_TO>5</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES8" msdata:rowOrder="7">
+              <EMPLOYEE_ID>8</EMPLOYEE_ID>
+              <LASTNAME>Callahan</LASTNAME>
+              <FIRSTNAME>Laura</FIRSTNAME>
+              <TITLE>Inside Sales Coordinator</TITLE>
+              <TITLE_OF_COURTESY>Ms.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1958-01-09T00:00:00-08:00</BIRTHDATE>
+              <HIREDATE>1994-03-05T00:00:00-08:00</HIREDATE>
+              <ADDRESS>4726 - 11th Ave. N.E.</ADDRESS>
+              <CITY>Seattle</CITY>
+              <REGION>WA</REGION>
+              <POSTAL_CODE>98105</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <HOME_PHONE>(206) 555-1189</HOME_PHONE>
+              <EXTENSION>2344</EXTENSION>
+              <PHOTO>laura.jpg</PHOTO>
+              <NOTES>Laura received a BA in psychology from the University of Washington.  She has also completed a course in business French.  She reads and writes French.</NOTES>
+              <REPORTS_TO>2</REPORTS_TO>
+            </EMPLOYEES>
+            <EMPLOYEES diffgr:id="EMPLOYEES9" msdata:rowOrder="8">
+              <EMPLOYEE_ID>9</EMPLOYEE_ID>
+              <LASTNAME>Dodsworth</LASTNAME>
+              <FIRSTNAME>Anne</FIRSTNAME>
+              <TITLE>Sales Representative</TITLE>
+              <TITLE_OF_COURTESY>Ms.</TITLE_OF_COURTESY>
+              <BIRTHDATE>1969-07-02T00:00:00-07:00</BIRTHDATE>
+              <HIREDATE>1994-11-15T00:00:00-08:00</HIREDATE>
+              <ADDRESS>7 Houndstooth Rd.</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>WG2 7LT</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <HOME_PHONE>(71) 555-4444</HOME_PHONE>
+              <EXTENSION>452</EXTENSION>
+              <PHOTO>anne.jpg</PHOTO>
+              <NOTES>Anne has a BA degree in English from St. Lawrence College.  She is fluent in French and German.</NOTES>
+              <REPORTS_TO>5</REPORTS_TO>
+            </EMPLOYEES>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>ORDER_DETAILS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>ORDER_DETAILS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>OrderDetails</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>ORDER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDER_DETAILS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>OrderDetails</ClassName>
+          <Name>ProductId</Name>
+          <DbFieldName>PRODUCT_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDER_DETAILS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>OrderDetails</ClassName>
+          <Name>UnitPrice</Name>
+          <DbFieldName>UNIT_PRICE</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>double</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDER_DETAILS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>OrderDetails</ClassName>
+          <Name>Quantity</Name>
+          <DbFieldName>QUANTITY</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDER_DETAILS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>OrderDetails</ClassName>
+          <Name>Discount</Name>
+          <DbFieldName>DISCOUNT</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>float</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>ORDER_DETAILS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>OrderDetails</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>ORDER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>ORDERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Orders</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>ORDER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>false</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ORDER_DETAILS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="ORDER_DETAILS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ORDER_ID" type="xs:int" />
+                      <xs:element name="PRODUCT_ID" type="xs:int" />
+                      <xs:element name="UNIT_PRICE" type="xs:double" />
+                      <xs:element name="QUANTITY" type="xs:int" />
+                      <xs:element name="DISCOUNT" type="xs:float" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS1" msdata:rowOrder="0">
+              <ORDER_ID>10837</ORDER_ID>
+              <PRODUCT_ID>40</PRODUCT_ID>
+              <UNIT_PRICE>18.4</UNIT_PRICE>
+              <QUANTITY>25</QUANTITY>
+              <DISCOUNT>0</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS2" msdata:rowOrder="1">
+              <ORDER_ID>10837</ORDER_ID>
+              <PRODUCT_ID>47</PRODUCT_ID>
+              <UNIT_PRICE>9.5</UNIT_PRICE>
+              <QUANTITY>40</QUANTITY>
+              <DISCOUNT>0.25</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS3" msdata:rowOrder="2">
+              <ORDER_ID>10837</ORDER_ID>
+              <PRODUCT_ID>76</PRODUCT_ID>
+              <UNIT_PRICE>18</UNIT_PRICE>
+              <QUANTITY>21</QUANTITY>
+              <DISCOUNT>0.25</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS4" msdata:rowOrder="3">
+              <ORDER_ID>10838</ORDER_ID>
+              <PRODUCT_ID>1</PRODUCT_ID>
+              <UNIT_PRICE>18</UNIT_PRICE>
+              <QUANTITY>4</QUANTITY>
+              <DISCOUNT>0.25</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS5" msdata:rowOrder="4">
+              <ORDER_ID>10838</ORDER_ID>
+              <PRODUCT_ID>18</PRODUCT_ID>
+              <UNIT_PRICE>62.5</UNIT_PRICE>
+              <QUANTITY>25</QUANTITY>
+              <DISCOUNT>0.25</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS6" msdata:rowOrder="5">
+              <ORDER_ID>10838</ORDER_ID>
+              <PRODUCT_ID>36</PRODUCT_ID>
+              <UNIT_PRICE>19</UNIT_PRICE>
+              <QUANTITY>50</QUANTITY>
+              <DISCOUNT>0.25</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS7" msdata:rowOrder="6">
+              <ORDER_ID>10839</ORDER_ID>
+              <PRODUCT_ID>58</PRODUCT_ID>
+              <UNIT_PRICE>13.25</UNIT_PRICE>
+              <QUANTITY>30</QUANTITY>
+              <DISCOUNT>0.1</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS8" msdata:rowOrder="7">
+              <ORDER_ID>10839</ORDER_ID>
+              <PRODUCT_ID>72</PRODUCT_ID>
+              <UNIT_PRICE>34.8</UNIT_PRICE>
+              <QUANTITY>15</QUANTITY>
+              <DISCOUNT>0.1</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS9" msdata:rowOrder="8">
+              <ORDER_ID>10840</ORDER_ID>
+              <PRODUCT_ID>25</PRODUCT_ID>
+              <UNIT_PRICE>14</UNIT_PRICE>
+              <QUANTITY>6</QUANTITY>
+              <DISCOUNT>0.2</DISCOUNT>
+            </ORDER_DETAILS>
+            <ORDER_DETAILS diffgr:id="ORDER_DETAILS10" msdata:rowOrder="9">
+              <ORDER_ID>10840</ORDER_ID>
+              <PRODUCT_ID>39</PRODUCT_ID>
+              <UNIT_PRICE>18</UNIT_PRICE>
+              <QUANTITY>10</QUANTITY>
+              <DISCOUNT>0.2</DISCOUNT>
+            </ORDER_DETAILS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>ORDERS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>ORDER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>CustomerId</Name>
+          <DbFieldName>CUSTOMER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>EmployeeId</Name>
+          <DbFieldName>EMPLOYEE_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>OrderDate</Name>
+          <DbFieldName>ORDER_DATE</DbFieldName>
+          <Length>7</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>DateTime</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>RequiredDate</Name>
+          <DbFieldName>REQUIRED_DATE</DbFieldName>
+          <Length>7</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>DateTime?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShippedDate</Name>
+          <DbFieldName>SHIPPED_DATE</DbFieldName>
+          <Length>7</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>DateTime?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipVia</Name>
+          <DbFieldName>SHIP_VIA</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>int?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>Freight</Name>
+          <DbFieldName>FREIGHT</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>double?</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipName</Name>
+          <DbFieldName>SHIP_NAME</DbFieldName>
+          <Length>40</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipAddress</Name>
+          <DbFieldName>SHIP_ADDRESS</DbFieldName>
+          <Length>60</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipCity</Name>
+          <DbFieldName>SHIP_CITY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipRegion</Name>
+          <DbFieldName>SHIP_REGION</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipPostalCode</Name>
+          <DbFieldName>SHIP_POSTAL_CODE</DbFieldName>
+          <Length>10</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>ORDERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Orders</ClassName>
+          <Name>ShipCountry</Name>
+          <DbFieldName>SHIP_COUNTRY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>ORDERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Orders</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>ORDER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>ORDER_DETAILS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>OrderDetails</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>ORDER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ORDERS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="ORDERS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ORDER_ID" type="xs:int" />
+                      <xs:element name="CUSTOMER_ID" type="xs:int" />
+                      <xs:element name="EMPLOYEE_ID" type="xs:int" />
+                      <xs:element name="ORDER_DATE" type="xs:dateTime" />
+                      <xs:element name="REQUIRED_DATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="SHIPPED_DATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="SHIP_VIA" type="xs:int" minOccurs="0" />
+                      <xs:element name="FREIGHT" type="xs:double" minOccurs="0" />
+                      <xs:element name="SHIP_NAME" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="40" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SHIP_ADDRESS" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="60" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SHIP_CITY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SHIP_REGION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SHIP_POSTAL_CODE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SHIP_COUNTRY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <ORDERS diffgr:id="ORDERS1" msdata:rowOrder="0">
+              <ORDER_ID>10313</ORDER_ID>
+              <CUSTOMER_ID>63</CUSTOMER_ID>
+              <EMPLOYEE_ID>2</EMPLOYEE_ID>
+              <ORDER_DATE>1996-09-24T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-22T00:00:00-07:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-04T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>2</SHIP_VIA>
+              <FREIGHT>1.96</FREIGHT>
+              <SHIP_NAME>QUICK-Stop</SHIP_NAME>
+              <SHIP_ADDRESS>Taucherstra?e 10</SHIP_ADDRESS>
+              <SHIP_CITY>Cunewalde</SHIP_CITY>
+              <SHIP_POSTAL_CODE>01307</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>Germany</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS2" msdata:rowOrder="1">
+              <ORDER_ID>10314</ORDER_ID>
+              <CUSTOMER_ID>65</CUSTOMER_ID>
+              <EMPLOYEE_ID>1</EMPLOYEE_ID>
+              <ORDER_DATE>1996-09-25T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-23T00:00:00-07:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-04T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>2</SHIP_VIA>
+              <FREIGHT>74.16</FREIGHT>
+              <SHIP_NAME>Rattlesnake Canyon Grocery</SHIP_NAME>
+              <SHIP_ADDRESS>2817 Milton Dr.</SHIP_ADDRESS>
+              <SHIP_CITY>Albuquerque</SHIP_CITY>
+              <SHIP_REGION>NM</SHIP_REGION>
+              <SHIP_POSTAL_CODE>87110</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>USA</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS3" msdata:rowOrder="2">
+              <ORDER_ID>10315</ORDER_ID>
+              <CUSTOMER_ID>38</CUSTOMER_ID>
+              <EMPLOYEE_ID>4</EMPLOYEE_ID>
+              <ORDER_DATE>1996-09-26T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-24T00:00:00-07:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-03T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>2</SHIP_VIA>
+              <FREIGHT>41.76</FREIGHT>
+              <SHIP_NAME>Island Trading</SHIP_NAME>
+              <SHIP_ADDRESS>Garden House
+Crowther Way</SHIP_ADDRESS>
+              <SHIP_CITY>Cowes</SHIP_CITY>
+              <SHIP_REGION>Isle of Wight</SHIP_REGION>
+              <SHIP_POSTAL_CODE>PO31 7PJ</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>UK</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS4" msdata:rowOrder="3">
+              <ORDER_ID>10316</ORDER_ID>
+              <CUSTOMER_ID>65</CUSTOMER_ID>
+              <EMPLOYEE_ID>1</EMPLOYEE_ID>
+              <ORDER_DATE>1996-09-27T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-25T00:00:00-07:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-08T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>3</SHIP_VIA>
+              <FREIGHT>150.15</FREIGHT>
+              <SHIP_NAME>Rattlesnake Canyon Grocery</SHIP_NAME>
+              <SHIP_ADDRESS>2817 Milton Dr.</SHIP_ADDRESS>
+              <SHIP_CITY>Albuquerque</SHIP_CITY>
+              <SHIP_REGION>NM</SHIP_REGION>
+              <SHIP_POSTAL_CODE>87110</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>USA</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS5" msdata:rowOrder="4">
+              <ORDER_ID>10317</ORDER_ID>
+              <CUSTOMER_ID>48</CUSTOMER_ID>
+              <EMPLOYEE_ID>6</EMPLOYEE_ID>
+              <ORDER_DATE>1996-09-30T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-28T00:00:00-08:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-10T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>1</SHIP_VIA>
+              <FREIGHT>12.69</FREIGHT>
+              <SHIP_NAME>Lonesome Pine Restaurant</SHIP_NAME>
+              <SHIP_ADDRESS>89 Chiaroscuro Rd.</SHIP_ADDRESS>
+              <SHIP_CITY>Portland</SHIP_CITY>
+              <SHIP_REGION>OR</SHIP_REGION>
+              <SHIP_POSTAL_CODE>97219</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>USA</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS6" msdata:rowOrder="5">
+              <ORDER_ID>10318</ORDER_ID>
+              <CUSTOMER_ID>38</CUSTOMER_ID>
+              <EMPLOYEE_ID>8</EMPLOYEE_ID>
+              <ORDER_DATE>1996-10-01T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-29T00:00:00-08:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-04T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>2</SHIP_VIA>
+              <FREIGHT>4.73</FREIGHT>
+              <SHIP_NAME>Island Trading</SHIP_NAME>
+              <SHIP_ADDRESS>Garden House
+Crowther Way</SHIP_ADDRESS>
+              <SHIP_CITY>Cowes</SHIP_CITY>
+              <SHIP_REGION>Isle of Wight</SHIP_REGION>
+              <SHIP_POSTAL_CODE>PO31 7PJ</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>UK</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS7" msdata:rowOrder="6">
+              <ORDER_ID>10319</ORDER_ID>
+              <CUSTOMER_ID>80</CUSTOMER_ID>
+              <EMPLOYEE_ID>7</EMPLOYEE_ID>
+              <ORDER_DATE>1996-10-02T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-30T00:00:00-08:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-11T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>3</SHIP_VIA>
+              <FREIGHT>64.5</FREIGHT>
+              <SHIP_NAME>Tortuga Restaurante</SHIP_NAME>
+              <SHIP_ADDRESS>Avda. Azteca 123</SHIP_ADDRESS>
+              <SHIP_CITY>M?xico D.F.</SHIP_CITY>
+              <SHIP_POSTAL_CODE>05033</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>Mexico</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS8" msdata:rowOrder="7">
+              <ORDER_ID>10320</ORDER_ID>
+              <CUSTOMER_ID>87</CUSTOMER_ID>
+              <EMPLOYEE_ID>5</EMPLOYEE_ID>
+              <ORDER_DATE>1996-10-03T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-17T00:00:00-07:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-18T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>3</SHIP_VIA>
+              <FREIGHT>34.57</FREIGHT>
+              <SHIP_NAME>Wartian Herkku</SHIP_NAME>
+              <SHIP_ADDRESS>Torikatu 38</SHIP_ADDRESS>
+              <SHIP_CITY>Oulu</SHIP_CITY>
+              <SHIP_POSTAL_CODE>90110</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>Finland</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS9" msdata:rowOrder="8">
+              <ORDER_ID>10321</ORDER_ID>
+              <CUSTOMER_ID>38</CUSTOMER_ID>
+              <EMPLOYEE_ID>3</EMPLOYEE_ID>
+              <ORDER_DATE>1996-10-03T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-10-31T00:00:00-08:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-11T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>2</SHIP_VIA>
+              <FREIGHT>3.43</FREIGHT>
+              <SHIP_NAME>Island Trading</SHIP_NAME>
+              <SHIP_ADDRESS>Garden House
+Crowther Way</SHIP_ADDRESS>
+              <SHIP_CITY>Cowes</SHIP_CITY>
+              <SHIP_REGION>Isle of Wight</SHIP_REGION>
+              <SHIP_POSTAL_CODE>PO31 7PJ</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>UK</SHIP_COUNTRY>
+            </ORDERS>
+            <ORDERS diffgr:id="ORDERS10" msdata:rowOrder="9">
+              <ORDER_ID>10322</ORDER_ID>
+              <CUSTOMER_ID>58</CUSTOMER_ID>
+              <EMPLOYEE_ID>7</EMPLOYEE_ID>
+              <ORDER_DATE>1996-10-04T00:00:00-07:00</ORDER_DATE>
+              <REQUIRED_DATE>1996-11-01T00:00:00-08:00</REQUIRED_DATE>
+              <SHIPPED_DATE>1996-10-23T00:00:00-07:00</SHIPPED_DATE>
+              <SHIP_VIA>3</SHIP_VIA>
+              <FREIGHT>0.4</FREIGHT>
+              <SHIP_NAME>Pericles Comidas cl?sicas</SHIP_NAME>
+              <SHIP_ADDRESS>Calle Dr. Jorge Cash 321</SHIP_ADDRESS>
+              <SHIP_CITY>M?xico D.F.</SHIP_CITY>
+              <SHIP_POSTAL_CODE>05033</SHIP_POSTAL_CODE>
+              <SHIP_COUNTRY>Mexico</SHIP_COUNTRY>
+            </ORDERS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>PRODUCTS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>PRODUCT_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>ProductName</Name>
+          <DbFieldName>PRODUCT_NAME</DbFieldName>
+          <Length>40</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>SupplierId</Name>
+          <DbFieldName>SUPPLIER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>CategoryId</Name>
+          <DbFieldName>CATEGORY_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>QuantityPerUnit</Name>
+          <DbFieldName>QUANTITY_PER_UNIT</DbFieldName>
+          <Length>20</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>UnitPrice</Name>
+          <DbFieldName>UNIT_PRICE</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>double</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>UnitsInStock</Name>
+          <DbFieldName>UNITS_IN_STOCK</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>UnitsOnOrder</Name>
+          <DbFieldName>UNITS_ON_ORDER</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>ReorderLevel</Name>
+          <DbFieldName>REORDER_LEVEL</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>PRODUCTS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Products</ClassName>
+          <Name>Discontinued</Name>
+          <DbFieldName>DISCONTINUED</DbFieldName>
+          <Length>1</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>PRODUCTS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Products</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>PRODUCT_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>ORDER_DETAILS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>OrderDetails</ClassName>
+            <Name>ProductId</Name>
+            <DbFieldName>PRODUCT_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="PRODUCTS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="PRODUCTS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="PRODUCT_ID" type="xs:int" />
+                      <xs:element name="PRODUCT_NAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="40" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SUPPLIER_ID" type="xs:int" />
+                      <xs:element name="CATEGORY_ID" type="xs:int" />
+                      <xs:element name="QUANTITY_PER_UNIT" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="20" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="UNIT_PRICE" type="xs:double" />
+                      <xs:element name="UNITS_IN_STOCK" type="xs:int" />
+                      <xs:element name="UNITS_ON_ORDER" type="xs:int" />
+                      <xs:element name="REORDER_LEVEL" type="xs:int" />
+                      <xs:element name="DISCONTINUED">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <PRODUCTS diffgr:id="PRODUCTS1" msdata:rowOrder="0">
+              <PRODUCT_ID>1</PRODUCT_ID>
+              <PRODUCT_NAME>Chai</PRODUCT_NAME>
+              <SUPPLIER_ID>1</SUPPLIER_ID>
+              <CATEGORY_ID>1</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>10 boxes x 20 bags</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>18</UNIT_PRICE>
+              <UNITS_IN_STOCK>39</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>10</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS2" msdata:rowOrder="1">
+              <PRODUCT_ID>2</PRODUCT_ID>
+              <PRODUCT_NAME>Chang</PRODUCT_NAME>
+              <SUPPLIER_ID>1</SUPPLIER_ID>
+              <CATEGORY_ID>1</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>24 - 12 oz bottles</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>19</UNIT_PRICE>
+              <UNITS_IN_STOCK>17</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>40</UNITS_ON_ORDER>
+              <REORDER_LEVEL>25</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS3" msdata:rowOrder="2">
+              <PRODUCT_ID>3</PRODUCT_ID>
+              <PRODUCT_NAME>Aniseed Syrup</PRODUCT_NAME>
+              <SUPPLIER_ID>1</SUPPLIER_ID>
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>12 - 550 ml bottles</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>10</UNIT_PRICE>
+              <UNITS_IN_STOCK>13</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>70</UNITS_ON_ORDER>
+              <REORDER_LEVEL>25</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS4" msdata:rowOrder="3">
+              <PRODUCT_ID>4</PRODUCT_ID>
+              <PRODUCT_NAME>Chef Anton's Cajun Seasoning</PRODUCT_NAME>
+              <SUPPLIER_ID>2</SUPPLIER_ID>
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>48 - 6 oz jars</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>22</UNIT_PRICE>
+              <UNITS_IN_STOCK>53</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>0</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS5" msdata:rowOrder="4">
+              <PRODUCT_ID>5</PRODUCT_ID>
+              <PRODUCT_NAME>Chef Anton's Gumbo Mix</PRODUCT_NAME>
+              <SUPPLIER_ID>2</SUPPLIER_ID>
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>36 boxes</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>21.35</UNIT_PRICE>
+              <UNITS_IN_STOCK>0</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>0</REORDER_LEVEL>
+              <DISCONTINUED>Y</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS6" msdata:rowOrder="5">
+              <PRODUCT_ID>6</PRODUCT_ID>
+              <PRODUCT_NAME>Grandma's Boysenberry Spread</PRODUCT_NAME>
+              <SUPPLIER_ID>3</SUPPLIER_ID>
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>12 - 8 oz jars</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>25</UNIT_PRICE>
+              <UNITS_IN_STOCK>120</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>25</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS7" msdata:rowOrder="6">
+              <PRODUCT_ID>7</PRODUCT_ID>
+              <PRODUCT_NAME>Uncle Bob's Organic Dried Pears</PRODUCT_NAME>
+              <SUPPLIER_ID>3</SUPPLIER_ID>
+              <CATEGORY_ID>7</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>12 - 1 lb pkgs.</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>30</UNIT_PRICE>
+              <UNITS_IN_STOCK>15</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>10</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS8" msdata:rowOrder="7">
+              <PRODUCT_ID>8</PRODUCT_ID>
+              <PRODUCT_NAME>Northwoods Cranberry Sauce</PRODUCT_NAME>
+              <SUPPLIER_ID>3</SUPPLIER_ID>
+              <CATEGORY_ID>2</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>12 - 12 oz jars</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>40</UNIT_PRICE>
+              <UNITS_IN_STOCK>6</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>0</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS9" msdata:rowOrder="8">
+              <PRODUCT_ID>9</PRODUCT_ID>
+              <PRODUCT_NAME>Mishi Kobe Niku</PRODUCT_NAME>
+              <SUPPLIER_ID>4</SUPPLIER_ID>
+              <CATEGORY_ID>6</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>18 - 500 g pkgs.</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>97</UNIT_PRICE>
+              <UNITS_IN_STOCK>29</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>0</REORDER_LEVEL>
+              <DISCONTINUED>Y</DISCONTINUED>
+            </PRODUCTS>
+            <PRODUCTS diffgr:id="PRODUCTS10" msdata:rowOrder="9">
+              <PRODUCT_ID>10</PRODUCT_ID>
+              <PRODUCT_NAME>Ikura</PRODUCT_NAME>
+              <SUPPLIER_ID>4</SUPPLIER_ID>
+              <CATEGORY_ID>8</CATEGORY_ID>
+              <QUANTITY_PER_UNIT>12 - 200 ml jars</QUANTITY_PER_UNIT>
+              <UNIT_PRICE>31</UNIT_PRICE>
+              <UNITS_IN_STOCK>31</UNITS_IN_STOCK>
+              <UNITS_ON_ORDER>0</UNITS_ON_ORDER>
+              <REORDER_LEVEL>0</REORDER_LEVEL>
+              <DISCONTINUED>N</DISCONTINUED>
+            </PRODUCTS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>SHIPPERS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>SHIPPERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Shippers</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>SHIPPER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SHIPPERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Shippers</ClassName>
+          <Name>CompanyName</Name>
+          <DbFieldName>COMPANY_NAME</DbFieldName>
+          <Length>40</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SHIPPERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Shippers</ClassName>
+          <Name>Phone</Name>
+          <DbFieldName>PHONE</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships />
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SHIPPERS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="SHIPPERS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="SHIPPER_ID" type="xs:int" />
+                      <xs:element name="COMPANY_NAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="40" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHONE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <SHIPPERS diffgr:id="SHIPPERS1" msdata:rowOrder="0">
+              <SHIPPER_ID>1</SHIPPER_ID>
+              <COMPANY_NAME>Speedy Express</COMPANY_NAME>
+              <PHONE>(503) 555-9831</PHONE>
+            </SHIPPERS>
+            <SHIPPERS diffgr:id="SHIPPERS2" msdata:rowOrder="1">
+              <SHIPPER_ID>2</SHIPPER_ID>
+              <COMPANY_NAME>United Package</COMPANY_NAME>
+              <PHONE>(503) 555-3199</PHONE>
+            </SHIPPERS>
+            <SHIPPERS diffgr:id="SHIPPERS3" msdata:rowOrder="2">
+              <SHIPPER_ID>3</SHIPPER_ID>
+              <COMPANY_NAME>Federal Shipping</COMPANY_NAME>
+              <PHONE>(503) 555-9931</PHONE>
+            </SHIPPERS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+    <DbTable>
+      <Schema>NORTHWIND</Schema>
+      <Name>SUPPLIERS</Name>
+      <SearchDepth>10</SearchDepth>
+      <Fields>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Id</Name>
+          <DbFieldName>SUPPLIER_ID</DbFieldName>
+          <Length>22</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>int</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>CompanyName</Name>
+          <DbFieldName>COMPANY_NAME</DbFieldName>
+          <Length>40</Length>
+          <AllowsNull>false</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>ContactName</Name>
+          <DbFieldName>CONTACT_NAME</DbFieldName>
+          <Length>30</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>ContactTitle</Name>
+          <DbFieldName>CONTACT_TITLE</DbFieldName>
+          <Length>30</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Address</Name>
+          <DbFieldName>ADDRESS</DbFieldName>
+          <Length>60</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>City</Name>
+          <DbFieldName>CITY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Region</Name>
+          <DbFieldName>REGION</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>PostalCode</Name>
+          <DbFieldName>POSTAL_CODE</DbFieldName>
+          <Length>10</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Country</Name>
+          <DbFieldName>COUNTRY</DbFieldName>
+          <Length>15</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Phone</Name>
+          <DbFieldName>PHONE</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>Fax</Name>
+          <DbFieldName>FAX</DbFieldName>
+          <Length>24</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+        <FieldDefinition>
+          <TableName>SUPPLIERS</TableName>
+          <TableSchema>NORTHWIND</TableSchema>
+          <ClassName>Suppliers</ClassName>
+          <Name>HomePage</Name>
+          <DbFieldName>HOME_PAGE</DbFieldName>
+          <Length>500</Length>
+          <AllowsNull>true</AllowsNull>
+          <Type>string</Type>
+          <IsShortBool>false</IsShortBool>
+        </FieldDefinition>
+      </Fields>
+      <Relationships>
+        <DbRelationship>
+          <Parent>
+            <TableName>SUPPLIERS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Suppliers</ClassName>
+            <Name>Id</Name>
+            <DbFieldName>SUPPLIER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Parent>
+          <Child>
+            <TableName>PRODUCTS</TableName>
+            <TableSchema>NORTHWIND</TableSchema>
+            <ClassName>Products</ClassName>
+            <Name>SupplierId</Name>
+            <DbFieldName>SUPPLIER_ID</DbFieldName>
+            <Length>22</Length>
+            <AllowsNull>false</AllowsNull>
+            <Type>int</Type>
+            <IsShortBool>false</IsShortBool>
+          </Child>
+          <IsMany>true</IsMany>
+        </DbRelationship>
+      </Relationships>
+      <SampleData>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SUPPLIERS" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="SUPPLIERS">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="SUPPLIER_ID" type="xs:int" />
+                      <xs:element name="COMPANY_NAME">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="40" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CONTACT_NAME" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CONTACT_TITLE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ADDRESS" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="60" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CITY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REGION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="POSTAL_CODE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="10" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="COUNTRY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="15" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="PHONE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="FAX" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="24" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="HOME_PAGE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="500" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+          <DocumentElement>
+            <SUPPLIERS diffgr:id="SUPPLIERS1" msdata:rowOrder="0">
+              <SUPPLIER_ID>1</SUPPLIER_ID>
+              <COMPANY_NAME>Exotic Liquids</COMPANY_NAME>
+              <CONTACT_NAME>Charlotte Cooper</CONTACT_NAME>
+              <CONTACT_TITLE>Purchasing Manager</CONTACT_TITLE>
+              <ADDRESS>49 Gilbert St.</ADDRESS>
+              <CITY>London</CITY>
+              <POSTAL_CODE>EC1 4SD</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <PHONE>(171) 555-2222</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS2" msdata:rowOrder="1">
+              <SUPPLIER_ID>2</SUPPLIER_ID>
+              <COMPANY_NAME>New Orleans Cajun Delights</COMPANY_NAME>
+              <CONTACT_NAME>Shelley Burke</CONTACT_NAME>
+              <CONTACT_TITLE>Order Administrator</CONTACT_TITLE>
+              <ADDRESS>P.O. Box 78934</ADDRESS>
+              <CITY>New Orleans</CITY>
+              <REGION>LA</REGION>
+              <POSTAL_CODE>70117</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <PHONE>(100) 555-4822</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS3" msdata:rowOrder="2">
+              <SUPPLIER_ID>3</SUPPLIER_ID>
+              <COMPANY_NAME>Grandma Kelly's Homestead</COMPANY_NAME>
+              <CONTACT_NAME>Regina Murphy</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Representative</CONTACT_TITLE>
+              <ADDRESS>707 Oxford Rd.</ADDRESS>
+              <CITY>Ann Arbor</CITY>
+              <REGION>MI</REGION>
+              <POSTAL_CODE>48104</POSTAL_CODE>
+              <COUNTRY>USA</COUNTRY>
+              <PHONE>(313) 555-5735</PHONE>
+              <FAX>(313) 555-3349</FAX>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS4" msdata:rowOrder="3">
+              <SUPPLIER_ID>4</SUPPLIER_ID>
+              <COMPANY_NAME>Tokyo Traders</COMPANY_NAME>
+              <CONTACT_NAME>Yoshi Nagase</CONTACT_NAME>
+              <CONTACT_TITLE>Marketing Manager</CONTACT_TITLE>
+              <ADDRESS>9-8 SekimaiMusashino-shi</ADDRESS>
+              <CITY>Tokyo</CITY>
+              <POSTAL_CODE>100</POSTAL_CODE>
+              <COUNTRY>Japan</COUNTRY>
+              <PHONE>(03) 3555-5011</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS5" msdata:rowOrder="4">
+              <SUPPLIER_ID>5</SUPPLIER_ID>
+              <COMPANY_NAME>Cooperativa de Quesos 'Las Cabras'</COMPANY_NAME>
+              <CONTACT_NAME>Antonio del Valle Saavedra </CONTACT_NAME>
+              <CONTACT_TITLE>Export Administrator</CONTACT_TITLE>
+              <ADDRESS>Calle del Rosal 4</ADDRESS>
+              <CITY>Oviedo</CITY>
+              <REGION>Asturias</REGION>
+              <POSTAL_CODE>33007</POSTAL_CODE>
+              <COUNTRY>Spain</COUNTRY>
+              <PHONE>(98) 598 76 54</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS6" msdata:rowOrder="5">
+              <SUPPLIER_ID>6</SUPPLIER_ID>
+              <COMPANY_NAME>Mayumi's</COMPANY_NAME>
+              <CONTACT_NAME>Mayumi Ohno</CONTACT_NAME>
+              <CONTACT_TITLE>Marketing Representative</CONTACT_TITLE>
+              <ADDRESS>92 SetsukoChuo-ku</ADDRESS>
+              <CITY>Osaka</CITY>
+              <POSTAL_CODE>545</POSTAL_CODE>
+              <COUNTRY>Japan</COUNTRY>
+              <PHONE>(06) 431-7877</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS7" msdata:rowOrder="6">
+              <SUPPLIER_ID>7</SUPPLIER_ID>
+              <COMPANY_NAME>Pavlova, Ltd.</COMPANY_NAME>
+              <CONTACT_NAME>Ian Devling</CONTACT_NAME>
+              <CONTACT_TITLE>Marketing Manager</CONTACT_TITLE>
+              <ADDRESS>74 Rose St.Moonie Ponds</ADDRESS>
+              <CITY>Melbourne</CITY>
+              <REGION>Victoria</REGION>
+              <POSTAL_CODE>3058</POSTAL_CODE>
+              <COUNTRY>Australia</COUNTRY>
+              <PHONE>(03) 444-2343</PHONE>
+              <FAX>(03) 444-6588</FAX>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS8" msdata:rowOrder="7">
+              <SUPPLIER_ID>8</SUPPLIER_ID>
+              <COMPANY_NAME>Specialty Biscuits, Ltd.</COMPANY_NAME>
+              <CONTACT_NAME>Peter Wilson</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Representative</CONTACT_TITLE>
+              <ADDRESS>29 King's Way</ADDRESS>
+              <CITY>Manchester</CITY>
+              <POSTAL_CODE>M14 GSD</POSTAL_CODE>
+              <COUNTRY>UK</COUNTRY>
+              <PHONE>(161) 555-4448</PHONE>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS9" msdata:rowOrder="8">
+              <SUPPLIER_ID>9</SUPPLIER_ID>
+              <COMPANY_NAME>PB Kn?ckebr?d AB</COMPANY_NAME>
+              <CONTACT_NAME>Lars Peterson</CONTACT_NAME>
+              <CONTACT_TITLE>Sales Agent</CONTACT_TITLE>
+              <ADDRESS>Kaloadagatan 13</ADDRESS>
+              <CITY>G?teborg</CITY>
+              <POSTAL_CODE>S-345 67</POSTAL_CODE>
+              <COUNTRY>Sweden </COUNTRY>
+              <PHONE>031-987 65 43</PHONE>
+              <FAX>031-987 65 91</FAX>
+            </SUPPLIERS>
+            <SUPPLIERS diffgr:id="SUPPLIERS10" msdata:rowOrder="9">
+              <SUPPLIER_ID>10</SUPPLIER_ID>
+              <COMPANY_NAME>Refrescos Americanas LTDA</COMPANY_NAME>
+              <CONTACT_NAME>Carlos Diaz</CONTACT_NAME>
+              <CONTACT_TITLE>Marketing Manager</CONTACT_TITLE>
+              <ADDRESS>Av. das Americanas 12.890</ADDRESS>
+              <CITY>S?o Paulo</CITY>
+              <POSTAL_CODE>5442</POSTAL_CODE>
+              <COUNTRY>Brazil</COUNTRY>
+              <PHONE>(11) 555 4640</PHONE>
+            </SUPPLIERS>
+          </DocumentElement>
+        </diffgr:diffgram>
+      </SampleData>
+      <NumberOfRows>0</NumberOfRows>
+    </DbTable>
+  </Tables>
+</ExplorerResults>
