@@ -75,8 +75,6 @@ namespace Northwind.Infrastructure
             //Any mapper in Mappings add it...
             foreach (Type t in GetMappings(assemblies))
             {
-                //mapper.AddMapping<InputFileMapping>();
-
                 var method = typeof(ModelMapper).GetMethods().FirstOrDefault(
                         o => o.Name.Equals("AddMapping") &&
                         o.GetParameters().Length == 0 &&
@@ -100,7 +98,7 @@ namespace Northwind.Infrastructure
             {
                 //If you have two persistent classes with the same (unqualified) name, you should set auto-import="false". 
                 //NHibernate will throw an exception if you attempt to assign two classes to the same "imported" name.
-                //Say two classes having same name from different assemblies (say ECTM.Models.MyClass and ECTM.DTO.MyClass)
+                //Say two classes having same name from different assemblies (say ABC.Models.MyClass and ABC.DTO.MyClass)
                 var hbm = map.CompileMappingForAllExplicitlyAddedEntities();
                 hbm.autoimport = false;
                 return hbm;
